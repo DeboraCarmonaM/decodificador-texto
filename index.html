@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+    <body>
+        <header>
+            <img class="logo" src="./assets/logo.png" alt="Logo da Alura">
+        </header>
+        <section class="areaEntrada">
+            <textarea class="textoEntrada" placeholder="Digite seu texto" autofocus></textarea>   
+            <div class="observacao">
+                <img src="./assets/exclamacao.png" alt="Ponto de Exclamação">
+                <label for="observacao">Apenas letras minúsculas e sem acento.</label>
+            </div>
+            <div class="botoesEntrada">
+                <button class="botoesEntrada__criptografar" onclick="botaoEncriptar()">Criptografar</button>
+                <button class="botoesEntrada__descriptografar" onclick="botaoDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="areaSaida">
+                <textarea class="textoSaida" cols="30" rows="30" contenteditable="true" disabled></textarea>
+                <button class="botaoCopiar" onclick="copiar()">Copiar</button>
+                <div class="mensagem">
+                    <img class="imgRapaz" src="./assets/rapaz.png" alt="Rapaz olhando uma lupa">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <h5>Digite um texto que você deseja criptografar ou descriptografar.</h>
+                </div>
+        </section>
+        <footer class="rodape">
+            <p>Desenvolvido por <a class="link" href="https://github.com/DeboraCarmonaM">Debora Carmona</a></p>
+        </footer>
+    </body> 
+    <script src="script.js"></script>
+</html>
